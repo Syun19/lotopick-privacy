@@ -1,64 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>LotoPick Privacy Policy</title>
-  <style>
-    body { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; max-width: 860px; margin: 40px auto; padding: 0 16px; line-height: 1.65; color: #222; }
-    h1,h2 { line-height: 1.3; }
-    .muted { color: #666; font-size: 14px; }
-    hr { margin: 28px 0; border: none; border-top: 1px solid #eee; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 / Política de Privacidad - LotoPick</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; color: #333; }
+        h1, h2, h3 { color: #2c3e50; }
+        h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .date { color: #666; font-style: italic; }
+        table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f5f5f5; }
+        .lang-switch { margin-bottom: 20px; padding: 10px; background: #eee; border-radius: 5px; }
+        .lang-switch a { margin-right: 15px; color: #0066cc; text-decoration: none; font-weight: bold; }
+    </style>
 </head>
 <body>
-  <h1>隐私政策 / Política de Privacidad</h1>
-  <p class="muted">Last updated: 2026-02-28</p>
 
-  <h2>中文</h2>
-  <p>LotoPick（以下简称“本应用”）重视你的隐私。本政策说明我们如何收集、使用和保护你的数据。</p>
-  <h3>1. 我们收集的数据</h3>
-  <ul>
-    <li>应用内购买状态（用于“去广告”功能）</li>
-    <li>广告相关标识符（由 Google AdMob 提供）</li>
-    <li>设备与崩溃日志（用于稳定性改进）</li>
-  </ul>
-  <h3>2. 数据用途</h3>
-  <ul>
-    <li>提供广告与去广告功能</li>
-    <li>改进产品性能与稳定性</li>
-    <li>处理反馈与客服请求</li>
-  </ul>
-  <h3>3. 第三方服务</h3>
-  <ul>
-    <li>Google AdMob（广告）</li>
-    <li>Google Play Billing（应用内购买）</li>
-  </ul>
-  <h3>4. 联系方式</h3>
-  <p>如有问题，请联系：syp2602l@gmail.com</p>
+    <div class="lang-switch">
+        <a href="#zh">🇨🇳 中文 (Chinese)</a>
+        <a href="#es">🇪🇸 Español (Spanish)</a>
+    </div>
 
-  <hr />
+    <!-- 中文部分 -->
+    <div id="zh">
+        <h1>隐私政策</h1>
+        <p class="date">最后更新日期：2026年2月28日<br>应用名称：LotoPick<br>包名：com.lottery.prediction</p>
 
-  <h2>Español</h2>
-  <p>LotoPick (\"la App\") valora tu privacidad. Esta política explica cómo recopilamos, usamos y protegemos tus datos.</p>
-  <h3>1. Datos que recopilamos</h3>
-  <ul>
-    <li>Estado de compras dentro de la app (para eliminar anuncios)</li>
-    <li>Identificadores relacionados con anuncios (proporcionados por Google AdMob)</li>
-    <li>Información del dispositivo y fallos (para mejorar estabilidad)</li>
-  </ul>
-  <h3>2. Uso de los datos</h3>
-  <ul>
-    <li>Mostrar anuncios y ofrecer función sin anuncios</li>
-    <li>Mejorar rendimiento y estabilidad</li>
-    <li>Atender consultas y soporte</li>
-  </ul>
-  <h3>3. Servicios de terceros</h3>
-  <ul>
-    <li>Google AdMob (anuncios)</li>
-    <li>Google Play Billing (compras dentro de la app)</li>
-  </ul>
-  <h3>4. Contacto</h3>
-  <p>Si tienes preguntas, contáctanos: syp2602l@gmail.com</p>
+        <h2>一、概述</h2>
+        <p>LotoPick 是一款西班牙彩票（欧洲百万、La Primitiva、Bonoloto）号码分析与预测工具。本应用高度尊重用户隐私，不会主动收集、存储或传输任何个人身份信息。</p>
+
+        <h2>二、我们收集的数据</h2>
+        <h3>2.1 应用自身收集的数据（仅本地）</h3>
+        <table>
+            <tr><th>数据类型</th><th>用途</th><th>存储位置</th></tr>
+            <tr><td>收藏号码组合</td><td>保存用户标记的彩票号码</td><td>仅保存在设备本地 (SQLite)</td></tr>
+            <tr><td>应用设置</td><td>记住语言偏好等</td><td>仅保存在设备本地 (SharedPreferences)</td></tr>
+            <tr><td>广告移除状态</td><td>记录是否购买了去广告功能</td><td>仅保存在设备本地</td></tr>
+        </table>
+        <p><strong>应用本身不会收集姓名、邮箱、手机号、位置或任何个人身份信息。</strong></p>
+
+        <h3>2.2 第三方 SDK 收集的数据</h3>
+        <p>本应用集成了以下第三方服务，它们可能会独立收集数据：</p>
+        <ul>
+            <li><strong>Google AdMob（广告服务）</strong><br>目的：展示插屏广告。<br>可能收集：广告 ID（AD_ID）、设备信息、IP 地址、广告互动行为。<br><em>退出方式：购买"去除广告"内购项目后，将停止数据收集并停止展示广告。</em></li>
+            <li><strong>Google Play 结算（应用内购买）</strong><br>目的：处理"去除广告"和打赏等内购交易。<br>可能收集：支付信息由 Google Play 处理，本应用不直接获取银行卡等敏感信息。</li>
+        </ul>
+
+        <h2>三、网络访问与数据来源</h2>
+        <p>本应用在联网时从公开第三方网站获取彩票历史开奖结果。此过程仅读取公共数据，绝不上传任何用户数据。数据仅用于本地分析和预测。</p>
+
+        <h2>四、数据存储、安全与删除</h2>
+        <ul>
+            <li><strong>纯本地存储：</strong> 所有用户数据（收藏、设置）均仅保存在用户设备本地，不上传至任何服务器。</li>
+            <li><strong>安全传输：</strong> 本应用强制使用 HTTPS，所有网络通信加密传输。</li>
+            <li><strong>数据删除机制：</strong> 由于本应用无云端服务器、无账号系统，用户若想删除所有数据，只需<strong>在设备系统设置中清除本应用数据，或直接卸载本应用</strong>即可完成彻底删除。</li>
+        </ul>
+
+        <h2>五、免责声明</h2>
+        <p>本应用提供的彩票号码仅供娱乐参考，基于历史数据的统计分析不保证中奖。请理性购彩，量力而行。</p>
+
+        <h2>六、联系我们</h2>
+        <p>如果您对本隐私政策有任何疑问，请通过电子邮件联系我们：<br><strong>syp2602l@gmail.com</strong></p>
+    </div>
+
+    <hr style="margin: 40px 0; border: 2px solid #eee;">
+
+    <!-- 西班牙语部分 -->
+    <div id="es">
+        <h1>Política de Privacidad</h1>
+        <p class="date">Última actualización: 28 de Febrero de 2026<br>Aplicación: LotoPick<br>Paquete: com.lottery.prediction</p>
+
+        <h2>1. Introducción</h2>
+        <p>LotoPick es una herramienta de análisis y predicción para loterías españolas (Euromillones, La Primitiva, Bonoloto). Respetamos profundamente su privacidad y no recopilamos, almacenamos ni transmitimos activamente información de identificación personal.</p>
+
+        <h2>2. Datos que procesamos</h2>
+        <h3>2.1 Datos procesados por la aplicación (Solo Locales)</h3>
+        <table>
+            <tr><th>Tipo de dato</th><th>Propósito</th><th>Almacenamiento</th></tr>
+            <tr><td>Combinaciones favoritas</td><td>Guardar sus números preferidos</td><td>Solo local (SQLite)</td></tr>
+            <tr><td>Ajustes de la app</td><td>Recordar preferencias (ej. idioma)</td><td>Solo local</td></tr>
+            <tr><td>Estado de anuncios</td><td>Verificar compra "Eliminar anuncios"</td><td>Solo local</td></tr>
+        </table>
+        <p><strong>La aplicación en sí NO recopila nombres, correos, números de teléfono, ubicación ni datos personales.</strong></p>
+
+        <h3>2.2 Servicios de Terceros (SDKs)</h3>
+        <p>Utilizamos los siguientes servicios de terceros que pueden recopilar datos:</p>
+        <ul>
+            <li><strong>Google AdMob (Anuncios)</strong><br>Propósito: Mostrar anuncios intersticiales.<br>Datos: ID de publicidad (AD_ID), info del dispositivo, IP.<br><em>Opt-out: Al comprar "Eliminar anuncios", los anuncios y la recopilación de estos datos se detendrán.</em></li>
+            <li><strong>Google Play Billing (Compras)</strong><br>Propósito: Procesar compras (eliminar anuncios, donaciones).<br>Datos: El pago es procesado por Google Play. La app no accede a su tarjeta bancaria.</li>
+        </ul>
+
+        <h2>3. Acceso a red y fuentes de datos</h2>
+        <p>La aplicación accede a internet únicamente para descargar los resultados históricos de la lotería desde fuentes públicas. Este proceso es solo de lectura y no carga datos del usuario.</p>
+
+        <h2>4. Almacenamiento, Seguridad y Eliminación de Datos</h2>
+        <ul>
+            <li><strong>Almacenamiento local:</strong> Sus datos (favoritos, configuración) nunca salen de su dispositivo. No usamos servidores en la nube.</li>
+            <li><strong>Seguridad:</strong> Forzamos conexiones seguras (HTTPS) para todas las solicitudes de red.</li>
+            <li><strong>Eliminación de datos (Data Deletion):</strong> Como no hay cuentas de usuario ni servidores, para eliminar permanentemente todos sus datos, simplemente <strong>borre los datos de la aplicación en los ajustes de Android o desinstale la aplicación</strong>.</li>
+        </ul>
+
+        <h2>5. Descargo de responsabilidad</h2>
+        <p>Los números generados son solo para fines de entretenimiento. El análisis estadístico no garantiza ganancias. Juegue con responsabilidad.</p>
+
+        <h2>6. Contáctenos</h2>
+        <p>Si tiene alguna pregunta sobre esta política, contáctenos en:<br><strong>syp2602l@gmail.com</strong></p>
+    </div>
+
 </body>
 </html>
