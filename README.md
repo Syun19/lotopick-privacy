@@ -1,4 +1,4 @@
-# 🎰 Lottery Prediction (彩票预测)
+# 🎰 LotoPick (彩票预测)
 
 ![Android](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Language-Kotlin-7F52FF?logo=kotlin&logoColor=white)
